@@ -5,12 +5,11 @@
 
 <script>
 export default {
-    name: 'Home',
+    name: 'Title',
     props: ['title','border','subtitle']
 }
 </script>
 
-    <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .title {
         display: block;
