@@ -42,7 +42,6 @@ export default {
     }
     .feed-item .content {
         margin: 0 auto;
-        padding-bottom: 15px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -55,5 +54,6 @@ export default {
         font-size: 12px;
         font-weight: bold;
         letter-spacing: -0.1em;
+        margin: 0;
     }
 </style>
