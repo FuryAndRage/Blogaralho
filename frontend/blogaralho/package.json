@@ -14,6 +14,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "milligram": "^1.4.1",
+    "milligrid": "^1.1.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
