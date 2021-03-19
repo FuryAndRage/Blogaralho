@@ -60,7 +60,6 @@ export default {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        padding: 0;
     }
     .menu .search {
         cursor: pointer;

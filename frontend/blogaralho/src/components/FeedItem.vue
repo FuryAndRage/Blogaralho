@@ -1,14 +1,16 @@
 <template>
     <div class="feed-item column column-33">
-        <div class="container">
+        <div class="container" :class="{'no-image' : !image.src}">
             <div class="content">
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1615915768736-3520426009d5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80" />
+                <hr noshade v-if="!image.src">
+                <figure v-if="image.src">
+                    <div class="image" v-bind:style=" {backgroundImage : `url(${image.src})`}"></div>
                 </figure>
                 <Title :subtitle="true" :title="title"></Title>
                 <div class="date">
                     <p> January 7, 2021 </p>
                 </div>
+                <hr noshade v-if="!image.src">
             </div>
         </div>
     </div>
@@ -42,12 +44,30 @@ export default {
     }
     .feed-item .content {
         margin: 0 auto;
-        padding-left: 10px;
-        padding-right: 10px;
+    }
+    .feed-item .container.no-image {
+        position: relative;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .feed-item .container.no-image hr {
+        display: block;
+        width: auto;
+        border-top : 1px solid #212121;
+        border-bottom : 1px solid #212121;
     }
     .feed-item figure {
         margin: 0;
         padding: 0;
+    }
+    .feed-item .image {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-position: center center;
     }
     .feed-item .date p {
         text-transform: uppercase;

@@ -16,6 +16,7 @@ export default {
         color: #212121;
         text-align: center;
         padding: 8px;
+        margin-bottom: 20px;
     }
     .subtitle {
         color: #212121;
