@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,13 +31,25 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'core',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
+
+    # Third party apps
+    'webpack_loader',
+    'corsheaders',
+    'django_summernote',
+
+    # Our own apps
+    'blogaralho.apps.core',
+    
+
+
 ]
 
 MIDDLEWARE = [
@@ -48,6 +60,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    #Third party middlewares
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'blogaralho.urls'
@@ -119,3 +134,24 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
+
+# Definindo aqui onde os arquivos estaticos serao servidos
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "frontend/build"),
+]
+
+# configuracao adicional para o webpack_loader
+WEBPACK_LOADER = {
+    'MANIFEST_FILE': os.path.join(BASE_DIR, "frontend/build/manifest.json"),
+}
+
+# Variaveis de configuracao para inclusao de cabecalho CORS
+CSRF_COOKIE_NAME = "XSRF-TOKEN"
+CORS_ORIGIN_ALLOW_ALL = True   
+
+CORS_ORIGIN_WHITELIST = [
+'http://localhost:8000',
+]
+# fim
