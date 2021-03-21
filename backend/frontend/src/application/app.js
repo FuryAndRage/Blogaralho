@@ -3,8 +3,8 @@ import Vue from 'vue';
 import App from '../App.vue';
 // import router from './router'
 
-import '../../node_modules/milligram/dist/milligram.min.css';
-import '../../node_modules/milligrid/dist/Milligrid.css';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min';
 
 Vue.config.productionTip = false;
 

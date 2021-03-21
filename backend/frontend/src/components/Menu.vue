@@ -2,16 +2,16 @@
     <div class="menu">
         <div class="container">
             <div class="row">
-                <div class="column column-90">
+                <div class="column col-sm-11">
                     <ul>
-                        <li class="button button-clear" v-for="{label,url} of items" :key="label">
+                        <li class="button btn" v-for="{label,url} of items" :key="label">
                             <a :href="url">
                                 {{label}}
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="column column-10">
+                <div class="column col-sm-1">
                     <div class="search">
                         Search
                     </div>
