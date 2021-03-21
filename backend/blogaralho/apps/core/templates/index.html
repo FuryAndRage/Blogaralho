@@ -9,13 +9,12 @@
 </head>
 <body>
 
-<div class="jumbotron py-5">
-  <div class="container">
-    <h1 class="display-3">Hello, world!</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called a
-      jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+    <noscript>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
 
+<<<<<<< HEAD
     <div class="d-flex justify-content-center">
       <img src="{% static 'vendors/images/webpack.png' %}" class="img-fluid"/>
     </div>
@@ -26,6 +25,9 @@
 <div id="app"></div>
 
 {% javascript_pack 'app' 'app2' %}
+=======
+    {% javascript_pack 'app' 'app2' attrs='charset="UTF-8"' %}
+>>>>>>> 554df0dd530e45765d1b5abd6b08b4cfb02f7bde
 
 </body>
 </html>

@@ -1,9 +1,17 @@
-import "../styles/index.scss";
+// Main.js
+import Vue from 'vue';
+import App from '../App.vue';
+// import router from './router'
 
-import "bootstrap/dist/js/bootstrap.bundle";
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min';
 
-import "../components/sidebar";
+Vue.config.productionTip = false;
 
-window.document.addEventListener("DOMContentLoaded", function () {
-  window.console.log("dom ready 1");
+/* eslint-disable no-new */
+new Vue({
+    el: '#app',
+    // router,
+    components: { App },
+    template: '<App/>'
 });
