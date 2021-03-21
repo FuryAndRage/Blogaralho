@@ -1,5 +1,5 @@
 <template>
-    <div class="feed-item column column-33">
+    <div class="feed-item ">
         <div class="container" :class="{'no-image' : !image.src}">
             <div class="content">
                 <hr noshade v-if="!image.src">
