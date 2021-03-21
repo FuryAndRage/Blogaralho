@@ -1,7 +1,7 @@
 {
   ".gitkeep": "http://localhost:9091/vendors/images/.gitkeep",
   "app.css": "http://localhost:9091/css/app.css",
-  "app.js": "http://localhost:9091/app.2f4cacf57166c3314eee.hot-update.js",
+  "app.js": "http://localhost:9091/js/app.js",
   "app2.js": "http://localhost:9091/js/app2.js",
   "css/vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js-node_modules_core-js_modules_e-7a4c85.css": "http://localhost:9091/css/vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js-node_modules_core-js_modules_e-7a4c85.css",
   "entrypoints": {
@@ -9,11 +9,9 @@
       "assets": {
         "js": [
           "http://localhost:9091/js/runtime.js",
-          "http://localhost:9091/runtime.2f4cacf57166c3314eee.hot-update.js",
           "http://localhost:9091/js/vendors-node_modules_webpack-dev-server_client_index_js_http_localhost_9091-node_modules_webp-423213.js",
           "http://localhost:9091/js/vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js-node_modules_core-js_modules_e-7a4c85.js",
-          "http://localhost:9091/js/app.js",
-          "http://localhost:9091/app.2f4cacf57166c3314eee.hot-update.js"
+          "http://localhost:9091/js/app.js"
         ],
         "css": [
           "http://localhost:9091/css/vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js-node_modules_core-js_modules_e-7a4c85.css",
@@ -25,19 +23,15 @@
       "assets": {
         "js": [
           "http://localhost:9091/js/runtime.js",
-          "http://localhost:9091/runtime.2f4cacf57166c3314eee.hot-update.js",
           "http://localhost:9091/js/vendors-node_modules_webpack-dev-server_client_index_js_http_localhost_9091-node_modules_webp-423213.js",
           "http://localhost:9091/js/app2.js"
         ]
       }
     }
   },
-  "js/app.js": "http://localhost:9091/js/app.js",
-  "js/runtime.js": "http://localhost:9091/js/runtime.js",
   "js/vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js-node_modules_core-js_modules_e-7a4c85.js": "http://localhost:9091/js/vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js-node_modules_core-js_modules_e-7a4c85.js",
   "js/vendors-node_modules_webpack-dev-server_client_index_js_http_localhost_9091-node_modules_webp-423213.js": "http://localhost:9091/js/vendors-node_modules_webpack-dev-server_client_index_js_http_localhost_9091-node_modules_webp-423213.js",
-  "runtime.2f4cacf57166c3314eee.hot-update.json": "http://localhost:9091/runtime.2f4cacf57166c3314eee.hot-update.json",
-  "runtime.js": "http://localhost:9091/runtime.2f4cacf57166c3314eee.hot-update.js",
+  "runtime.js": "http://localhost:9091/js/runtime.js",
   "sample.jpg": "http://localhost:9091/vendors/images/sample.jpg",
   "webpack.png": "http://localhost:9091/vendors/images/webpack.png"
 }
