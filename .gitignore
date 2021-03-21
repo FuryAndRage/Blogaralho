@@ -104,7 +104,9 @@ dist
 .tern-port
 
 # Venv
-backend/venv
+./venv
+venv
+venv/*
 *.pyc
 *__pycache__
 .*sqlite3
