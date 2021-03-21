@@ -44,9 +44,12 @@ INSTALLED_APPS = [
     'webpack_loader',
     'corsheaders',
     'django_summernote',
+    'rest_framework',
 
     # Our own apps
     'blogaralho.apps.core',
+    'blogaralho.apps.categories',
+    'blogaralho.apps.posts',
     
 
 
@@ -137,6 +140,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 # Definindo aqui onde os arquivos estaticos serao servidos
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "frontend/build"),
@@ -154,4 +158,13 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = [
 'http://localhost:8000',
 ]
-# fim
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICANTION_CLASSES':(
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+
+    'DEFAULT_PERMISSION_CLASSES':('rest_framework.permissions.IsAuthenticatedOrReadOnly',),
+    # 'DEFAULT_PERMISSION_CLASSES': ( 'rest_framework.permissions.IsAdminUser', ),
+}
