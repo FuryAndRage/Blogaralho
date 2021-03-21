@@ -1,16 +1,16 @@
 <template>
-    <div class="feed-item ">
-        <div class="container" :class="{'no-image' : !image.src}">
+    <div class="feed-item">
+        <div class="container" :class="{'no-image' : !post_image}">
             <div class="content">
-                <hr noshade v-if="!image.src">
-                <figure v-if="image.src">
-                    <div class="image" v-bind:style=" {backgroundImage : `url(${image.src})`}"></div>
+                <hr noshade v-if="!post_image">
+                <figure v-if="post_image">
+                    <div class="image" v-bind:style=" {backgroundImage : `url(${post_image})`}"></div>
                 </figure>
-                <Title :subtitle="true" :title="title"></Title>
+                <Title :subtitle="true" :title="post_title"></Title>
                 <div class="date">
                     <p> January 7, 2021 </p>
                 </div>
-                <hr noshade v-if="!image.src">
+                <hr noshade v-if="!post_image">
             </div>
         </div>
     </div>
