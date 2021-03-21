@@ -1,0 +1,43 @@
+{
+  ".gitkeep": "http://localhost:9091/vendors/images/.gitkeep",
+  "app.css": "http://localhost:9091/css/app.css",
+  "app.js": "http://localhost:9091/app.9eef7a06602ec8178b53.hot-update.js",
+  "app2.js": "http://localhost:9091/js/app2.js",
+  "css/vendors-node_modules_core-js_modules_es_object_assign_js-node_modules_milligram_dist_milligra-ecce97.css": "http://localhost:9091/css/vendors-node_modules_core-js_modules_es_object_assign_js-node_modules_milligram_dist_milligra-ecce97.css",
+  "entrypoints": {
+    "app": {
+      "assets": {
+        "js": [
+          "http://localhost:9091/js/runtime.js",
+          "http://localhost:9091/runtime.9eef7a06602ec8178b53.hot-update.js",
+          "http://localhost:9091/js/vendors-node_modules_webpack-dev-server_client_index_js_http_localhost_9091-node_modules_webp-423213.js",
+          "http://localhost:9091/js/vendors-node_modules_core-js_modules_es_object_assign_js-node_modules_milligram_dist_milligra-ecce97.js",
+          "http://localhost:9091/js/app.js",
+          "http://localhost:9091/app.9eef7a06602ec8178b53.hot-update.js"
+        ],
+        "css": [
+          "http://localhost:9091/css/vendors-node_modules_core-js_modules_es_object_assign_js-node_modules_milligram_dist_milligra-ecce97.css",
+          "http://localhost:9091/css/app.css"
+        ]
+      }
+    },
+    "app2": {
+      "assets": {
+        "js": [
+          "http://localhost:9091/js/runtime.js",
+          "http://localhost:9091/runtime.9eef7a06602ec8178b53.hot-update.js",
+          "http://localhost:9091/js/vendors-node_modules_webpack-dev-server_client_index_js_http_localhost_9091-node_modules_webp-423213.js",
+          "http://localhost:9091/js/app2.js"
+        ]
+      }
+    }
+  },
+  "js/app.js": "http://localhost:9091/js/app.js",
+  "js/runtime.js": "http://localhost:9091/js/runtime.js",
+  "js/vendors-node_modules_core-js_modules_es_object_assign_js-node_modules_milligram_dist_milligra-ecce97.js": "http://localhost:9091/js/vendors-node_modules_core-js_modules_es_object_assign_js-node_modules_milligram_dist_milligra-ecce97.js",
+  "js/vendors-node_modules_webpack-dev-server_client_index_js_http_localhost_9091-node_modules_webp-423213.js": "http://localhost:9091/js/vendors-node_modules_webpack-dev-server_client_index_js_http_localhost_9091-node_modules_webp-423213.js",
+  "runtime.9eef7a06602ec8178b53.hot-update.json": "http://localhost:9091/runtime.9eef7a06602ec8178b53.hot-update.json",
+  "runtime.js": "http://localhost:9091/runtime.9eef7a06602ec8178b53.hot-update.js",
+  "sample.jpg": "http://localhost:9091/vendors/images/sample.jpg",
+  "webpack.png": "http://localhost:9091/vendors/images/webpack.png"
+}

@@ -3,6 +3,7 @@ const Path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const WebpackAssetsManifest = require("webpack-assets-manifest");
+const { VueLoaderPlugin } = require('vue-loader')
 
 const getEntryObject = () => {
   const entries = {};
@@ -28,6 +29,7 @@ module.exports = {
     runtimeChunk: "single",
   },
   plugins: [
+    new VueLoaderPlugin(),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
@@ -42,9 +44,11 @@ module.exports = {
     }),
   ],
   resolve: {
-    alias: {
-      "~": Path.resolve(__dirname, "../src"),
-    },
+        alias: {
+            "~": Path.resolve(__dirname, "../src"),
+            vue: 'vue/dist/vue.js',
+            extensions: ['.vue'],
+        },
   },
   module: {
     rules: [
@@ -52,6 +56,10 @@ module.exports = {
         test: /\.mjs$/,
         include: /node_modules/,
         type: "javascript/auto",
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
       },
       {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
