@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django import urls
 from django.contrib import admin
 from django.urls import include,path
 
@@ -23,8 +24,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('auth/', include('rest_framework.urls')),
     path('', include('blogaralho.apps.core.urls')),
-
+    path('api/category/', include('blogaralho.apps.categories.urls')),
+    path('api/post/', include('blogaralho.apps.posts.urls')),
+    
     # Inclusao da rota do django summernote para fazer os posts no blog
     path('summernote/', include('django_summernote.urls')),
     # path('', include('blogaralho.apps.core.urls'))
