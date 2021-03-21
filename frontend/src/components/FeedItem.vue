@@ -1,14 +1,14 @@
 <template>
     <div class="feed-item">
-        <div class="container" :class="{'no-image' : !post_image}">
-            <div class="content">
+        <div class="container-fluid" :class="{'no-image' : !post_image}">
+            <div class="card">
                 <hr noshade v-if="!post_image">
                 <figure v-if="post_image">
                     <div class="image" v-bind:style=" {backgroundImage : `url(${post_image})`}"></div>
                 </figure>
-                <Title :subtitle="true" :title="post_title"></Title>
+                <Title :subtitle="true" :title="post_title" class="text-center"></Title>
                 <div class="date">
-                    <p> January 7, 2021 </p>
+                    <p> {{post_date}}</p>
                 </div>
                 <hr noshade v-if="!post_image">
             </div>

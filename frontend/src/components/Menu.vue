@@ -1,24 +1,28 @@
 <template>
-    <div class="menu">
-        <div class="container">
-            <div class="row">
-                <div class="column col-sm-11">
-                    <ul>
-                        <li class="button btn" v-for="{label,url} of items" :key="label">
-                            <a :href="url">
-                                {{label}}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column col-sm-1">
-                    <div class="search">
-                        Search
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Blogaralho</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item" v-for="{label,url} of items" :key="label">
+                    <a class="nav-link" :href="url">
+                        {{label}}
+                    </a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2 shadow-none" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
             </div>
         </div>
-    </div>
+    </nav>
 </template>
 
 <script>
@@ -78,4 +82,14 @@ export default {
     .menu .button a {
         color: #000;
     }
+    .nav-link:hover{
+        background-color:#212529;
+        color: #fff;
+        transition-duration: 0.4s;
+        
+    }
+    .nav-link{
+        transition-duration: 0.4s
+    }
+    
 </style>
