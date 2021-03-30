@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style scoped>
-    .title {
+    /* .title {
         display: block;
         color: #212121;
         text-align: center;
@@ -26,5 +26,5 @@ export default {
     .title.border {
         border-top: 2px solid #212121;
         border-bottom: 2px solid #212121;
-    }
+    } */
 </style>

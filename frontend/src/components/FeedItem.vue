@@ -1,10 +1,10 @@
 <template>
-    <div class="feed-item">
-        <div class="container-fluid" :class="{'no-image' : !post_image}">
-            <div class="card">
+    <div class="card" v-if="post_is_public">
+        <div class="card-body">
+            <div class="">
                 <hr noshade v-if="!post_image">
                 <figure v-if="post_image">
-                    <div class="image" v-bind:style=" {backgroundImage : `url(${post_image})`}"></div>
+                   <img v-bind:src="post_image" class="card-img-top" alt="">
                 </figure>
                 <Title :subtitle="true" :title="post_title" class="text-center"></Title>
                 <div class="date">
@@ -14,8 +14,8 @@
             </div>
         </div>
     </div>
-</template>
 
+</template>
 <script>
 import Title from './Title.vue';
 
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style scoped>
-    .feed-item {
+    /* .feed-item {
         margin: 20px 0;
     }
     .feed-item:nth-child(1n+1) {
@@ -75,5 +75,5 @@ export default {
         font-weight: bold;
         letter-spacing: -0.1em;
         margin: 0;
-    }
+    } */
 </style>

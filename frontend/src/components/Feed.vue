@@ -1,7 +1,7 @@
 <template>
-    <div class="feed">
+    <div class="col-12 col-lg-12 col-md-12">
         <div class="row justify-content-center">
-            <feed-item v-for="post of posts" :post="post" :key="post.id" class="col-md-4 col-lg-4"></feed-item>
+            <feed-item v-for="post of posts" :post="post" :key="post.id"  class="col-md-12 col-lg-3 m-2"></feed-item>
         </div>
     </div>
 </template>

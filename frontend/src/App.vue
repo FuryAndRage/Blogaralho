@@ -1,6 +1,9 @@
 <template>
     <div id="app">
-        <Home></Home>
+        <div class="container-fluid">
+            <Home></Home>
+        </div>
+        
     </div>
 </template>
 

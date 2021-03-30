@@ -1,6 +1,6 @@
 <template>
-    <div class="home">
-        <div class="container">
+    <div class="">
+        <div class="">
             <Menu></Menu>
             <Title :title="title" :border="true"></Title>
             <Feed></Feed>
